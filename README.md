@@ -23,7 +23,7 @@ All the keys are in the menu. Here are some highlights:
 * The fractal equation is Z[n+1] = Z[n]^2 + c. Try increasing or decreasing the Power with P for some interesting results, even going negative! The squared algorithm is optimized. All other powers are slower.
 * Iterations determines how far down into the set it calculates. More iterations are slower.
 
-![Menu](screenshots/menu.png)
+<img width="473" height="695" alt="image" src="https://github.com/user-attachments/assets/9a05ad0b-300b-4191-bcc8-612cf2e6248f" />
 
 
 ## How To Colorize
@@ -46,11 +46,6 @@ By adjusting the frequency and phase of each color, you can blend them to create
 
 Also, you can click a slider then use your arrow keys for more control.
 
-
-### Color Method #2 - Simple gradient
-* This function just uses a simple two color gradient (first two colors), with an overlaid accent (third color).
-* Use the sliders to adjust the position and width of the accent color from the top of the fractal down to the bottom.
-* Change accent width to zero to remove it.
 
 
 ## Limitations
