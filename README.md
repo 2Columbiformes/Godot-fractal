@@ -8,6 +8,7 @@ What sets this fractal generator apart from others is that you can control the J
 
 <img width="1915" height="1079" alt="Screenshot 2025-09-18 154547" src="https://github.com/user-attachments/assets/577f8655-59d0-4aa8-9e43-5b872aa1867a" />
 <img width="1919" height="1079" alt="Screenshot 2025-09-18 203657" src="https://github.com/user-attachments/assets/5c0afdcd-8567-4903-9bc4-41ab48bb70da" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/43992b0b-1652-4cb7-bf16-559078303eac" />
 
 ![Julia screenshot](screenshots/julia2.gif)
 ![Mandelbrot screenshot](screenshots/mandelbrot1.gif)
