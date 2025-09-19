@@ -1,15 +1,15 @@
 # Godot Fractal Art
 
 This project generates the Mandelbrot and Julia fractal sets with arbitrary real valued powers for both!
+There are plans to extend to arbitrary precision, and complex powers.
 
 The latest supports Godot 4.x. See the tags for the 3.x version.
-
 What sets this fractal generator apart from others is that you can control the Julia seed with mouse movement and watch some interesting visual effects.
 
-![Julia screenshot](screenshots/julia1.gif)
+<img width="1915" height="1079" alt="Screenshot 2025-09-18 154547" src="https://github.com/user-attachments/assets/577f8655-59d0-4aa8-9e43-5b872aa1867a" />
+<img width="1919" height="1079" alt="Screenshot 2025-09-18 203657" src="https://github.com/user-attachments/assets/5c0afdcd-8567-4903-9bc4-41ab48bb70da" />
 ![Julia screenshot](screenshots/julia2.gif)
 ![Mandelbrot screenshot](screenshots/mandelbrot1.gif)
-
 
 ## Watch A Youtube Video That Shows Even More Animations
 [![Making Art With Godot](https://img.youtube.com/vi/zfA0jLDRCZ4/0.jpg)](https://www.youtube.com/watch?v=zfA0jLDRCZ4)
