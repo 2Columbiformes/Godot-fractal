@@ -1,0 +1,333 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxas8w6rr810e"]
+
+[ext_resource type="Script" uid="uid://d0bkjljkotf4j" path="res://UI.cs" id="1_b3bc3"]
+
+[node name="UI" type="Panel"]
+self_modulate = Color(1, 1, 1, 0.784314)
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 472.0
+grow_vertical = 2
+script = ExtResource("1_b3bc3")
+
+[node name="Menu" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 468.0
+offset_bottom = 1080.0
+
+[node name="HSeparator4" type="HSeparator" parent="Menu"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="Menu/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Quit"
+
+[node name="HideButton" type="Button" parent="Menu/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Hide"
+
+[node name="FPS Block" type="HBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="FPSLabel" type="Label" parent="Menu/FPS Block"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FPS:"
+
+[node name="FPS" type="Label" parent="Menu/FPS Block"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0"
+horizontal_alignment = 2
+
+[node name="FullScreenBlock" type="HBoxContainer" parent="Menu"]
+visible = false
+layout_mode = 2
+
+[node name="Full screen label" type="Label" parent="Menu/FullScreenBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "(F)ull Screen: "
+
+[node name="FullScreen" type="CheckButton" parent="Menu/FullScreenBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+
+[node name="ColorBlock" type="HBoxContainer" parent="Menu"]
+visible = false
+layout_mode = 2
+
+[node name="ColorLabel" type="Label" parent="Menu/ColorBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Simple Color: "
+
+[node name="ColorMethod" type="CheckButton" parent="Menu/ColorBlock"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="RedBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="RedLabel" type="Label" parent="Menu/RedBlock"]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Red Frequency/Phase:"
+
+[node name="RedFrequency" type="HSlider" parent="Menu/RedBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.1
+max_value = 6.0
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="RedPhase" type="HSlider" parent="Menu/RedBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.29
+step = 0.1
+value = 4.7
+ticks_on_borders = true
+
+[node name="GreenBlock" type="HBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="GreenLabel" type="Label" parent="Menu/GreenBlock"]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Green Freq/Phase:"
+
+[node name="GreenFrequency" type="HSlider" parent="Menu/GreenBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.1
+max_value = 6.0
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="GreenPhase" type="HSlider" parent="Menu/GreenBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.29
+step = 0.1
+value = 4.7
+ticks_on_borders = true
+
+[node name="BlueBlock" type="HBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="BlueLabel" type="Label" parent="Menu/BlueBlock"]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Blue Frequency/Phase:"
+
+[node name="BlueFrequency" type="HSlider" parent="Menu/BlueBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.1
+max_value = 6.0
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="BluePhase" type="HSlider" parent="Menu/BlueBlock"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.29
+step = 0.1
+value = 4.7
+ticks_on_borders = true
+
+[node name="SmoothingBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="SmoothingLabel" type="Label" parent="Menu/SmoothingBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Smooth (G)radient: "
+
+[node name="Smoothing" type="CheckButton" parent="Menu/SmoothingBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="Menu"]
+layout_mode = 2
+
+[node name="FractalBlock" type="HBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/FractalBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Select Fractal: "
+
+[node name="Mandelbrot Button" type="Button" parent="Menu/FractalBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mandelbrot"
+
+[node name="Julia Button" type="Button" parent="Menu/FractalBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Julia"
+
+[node name="ScaleBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="ScaleLabel" type="Label" parent="Menu/ScaleBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Scale: "
+
+[node name="Scale" type="LineEdit" parent="Menu/ScaleBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+
+[node name="PositionBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="PositionLabel" type="Label" parent="Menu/PositionBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Position: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/PositionBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PositionX" type="LineEdit" parent="Menu/PositionBlock/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+
+[node name="PositionY" type="LineEdit" parent="Menu/PositionBlock/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+
+[node name="HSeparator2" type="HSeparator" parent="Menu"]
+layout_mode = 2
+
+[node name="SeedBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="SeedLabel" type="Label" parent="Menu/SeedBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "(S)eed: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/SeedBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SeedX" type="LineEdit" parent="Menu/SeedBlock/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+
+[node name="SeedY" type="LineEdit" parent="Menu/SeedBlock/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+
+[node name="PowerBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="PowerLabel" type="Label" parent="Menu/PowerBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "(P)ower: "
+
+[node name="Power" type="LineEdit" parent="Menu/PowerBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+select_all_on_focus = true
+
+[node name="IterationsBlock" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="IterationsLabel" type="Label" parent="Menu/IterationsBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "(I)terations:"
+
+[node name="Iterations" type="LineEdit" parent="Menu/IterationsBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator3" type="HSeparator" parent="Menu"]
+layout_mode = 2
+
+[node name="Instructions" type="RichTextLabel" parent="Menu"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 15
+text = "Esc/RMB      Show/Hide this menu
+CTRL+q        Exit Program
+f                     Full screen on/off 
+g		     		  Smoothing on/off
+LMB+Drag   Pan screen
+Wheel		      Zoom
+p/P			      +/- Power
+i/I				      +/- Iterations
+--- Julia Only ---
+s			  Mouse adjusts seed on/off
+SHIFT    Slow seed adjustment to 1/3rd
+CTRL     Slow seed adjustment to 1/10th"
+
+[node name="PickPanel" type="Panel" parent="."]
+visible = false
+self_modulate = Color(1, 1, 1, 0.784314)
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 321.0
+offset_right = 631.0
+offset_bottom = 513.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PickPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 290.0
+offset_bottom = 462.0
+
+[node name="ClosePicker" type="Button" parent="PickPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Close Panel"
+
+[node name="HSeparator3" type="HSeparator" parent="PickPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="ColorPicker" type="ColorPicker" parent="PickPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+edit_alpha = false

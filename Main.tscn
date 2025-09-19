@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6irv6agle2c4"]
+
+[ext_resource type="Material" uid="uid://dif05f388unwv" path="res://materials/julia.material" id="1"]
+[ext_resource type="Script" uid="uid://dbq4ivawdkmyj" path="res://Game.cs" id="1_fos0i"]
+[ext_resource type="Texture2D" uid="uid://csmcxefwfhkhk" path="res://icon.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://dxas8w6rr810e" path="res://UI.tscn" id="4"]
+[ext_resource type="Script" uid="uid://cw0m0vxmcg6rp" path="res://Panel.cs" id="5_fos0i"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_fos0i")
+
+[node name="Panel" type="TextureRect" parent="."]
+material = ExtResource("1")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("5_fos0i")
+
+[node name="UI" parent="." instance=ExtResource("4")]
+top_level = true
+z_index = 1
+anchors_preset = -1
+anchor_right = 0.246
+offset_right = -0.320007
+focus_mode = 2
