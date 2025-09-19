@@ -1,6 +1,6 @@
 # Godot Fractal Art
 
-This project generates the Mandelbrot and Julia fractal sets using shaders and the Godot Engine.
+This project generates the Mandelbrot and Julia fractal sets with arbitrary real valued powers for both!
 
 The latest supports Godot 4.x. See the tags for the 3.x version.
 
